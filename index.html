@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Grocery Store </title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="K:\fontawesome\fontawesome-free-5.13.0-web\fontawesome-free=5.13.0-web\css\all.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function stickyMenu() {
+            var stickyMenu = document.getElementById('sticky');
+            if(window.pageYOffset > 220){
+                sticky.classList.add('sticky');
+            }else{
+                sticky.classList.remove('sticky');
+            }
+        }
+    window.onscroll = function() {
+        stickyMenu();
+    }    
+    </script>
+    <style>
+        @media only screen and (max-width:600px){
+
+            .page-title{
+                background: rgba(0,0,0,0.5);
+                height: 290px;
+                text-align: center;
+                color:white;
+                font-variant:small-caps;
+                font-size: 70px;
+                font-family: fantasy;
+                letter-spacing: 20px;
+            }
+            .menu-ul li{
+                font-size: 13.2px;
+                list-style: none;
+                display: inline-block;
+                padding: 9px 9px 22px 25px;
+            }
+            .a-menu,.a-links{
+                text-decoration:none;
+                color:white;
+            
+                
+            }
+            .menu-ul li:hover{
+                background: #5b8c5a;
+                transform: scale(1.1);
+           
+            }
+            .search-box{
+                border:1px solid black;
+                border-radius: 50px;
+                background:white;
+                width: max-content;
+                display: inline-block;
+                margin: 10px;
+                font-size: 20px;
+            }
+            body{
+                padding: 0;
+                margin: 0px;
+                height: 100%;
+                width: 100%;
+            }
+.parallox,parallaxl{
+    height:224px;
+}
+         .menu{
+            margin-top: -2%;
+            
+         }
+         .a-menu{
+           font-size: -99px;
+         }
+   
+
+    
+         .deals-container{
+         width: 100%;
+         margin-left: -9px;
+         }
+         .deals{
+            padding: 75px;
+            font-weight: bold;
+            font-size: 30px;
+            color: white;
+            display: inline-block;
+            margin: 20px;
+            max-width: 45%;
+            background: linear-gradient(120deg,#16817a 20%,#cee397 50% , #16817a 80%);
+        }
+
+}
+        
+    </style>
+</head>
+<body>
+    <div class="parallox">
+        <div class="page-title"> Eat Fresh </div>
+    </div>
+    <div class="menu" id="sticky">
+        <ul class="menu-ul">
+            <a href="#" class="a-menu"><li>Home</li></a>
+            <a href="#" class="a-menu"><li>Deals</li></a>
+            <a href="#" class="a-menu"><li>Vegetables</li></a>
+            <a href="#" class="a-menu"><li>Fruits</li></a>
+            <a href="#" class="a-menu" id="jass"><li>Cart</li></a>
+        </ul>
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Search...."name="search"class="search-input"/>
+                <button type="submit">  <img src="https://th.bing.com/th/id/OIP.S4taeGPIeZrjdwqrkjDRnAHaGH?w=184&h=180&c=7&r=0&o=5&pid=1.7" height="27px" alt=""></button>
+            </form>
+        </div>
+    </div>   
+  
+    <!-- home page starts -->
+    <div class="container">
+        <a href="#Vegetables">
+            <div class="categories">
+                <img src="capsicum.jpg" class="item-image"/>
+                <div class="image-title">Vegetables</div>
+            </div>
+            </a>
+            <a href="#fruits">
+                <div class="categories">
+                    <img src="strwabery.jpg" class="item-image"/>
+                    <div class="image-title">Fruits</div>
+                </div>
+            </a>
+            <a href="#deals">
+                <div class="categories">
+                    <img src="deals.jpg" class="item-image"/>
+                    <div class="image-title">Deals </div>
+                </div>
+            </a>
+            <a href="#seafood">
+                <div class="categories">
+                    <img src="garlic.jpg" class="item-image"/>
+                    <div class="image-title">Herbs & Seasoning </div>
+                </div>
+            </a>
+    </div>
+    <!---deals begins here-->
+    <div class="deals-container" id="deals">
+        <div class="parallox">
+            <div class="title">Deals</div>
+    </div>
+    <div class="deals">
+        save 20% on min. purchase of $200 on vegetables<br/>
+        <button class="coupon-btn">Add coupon</button>
+    </div> 
+    <div class="deals">
+        save 10% on min. purchase of $200 on fruits<br/>
+        <button class="coupon-btn">Add coupon</button>
+    </div> 
+    <div class="deals">
+        save 10% on min. purchase of $200 on seafood<br/>
+        <button class="coupon-btn">Add coupon</button>
+    </div> 
+    </div>
+<!--deals ends here-->
+     <div class="deals-container" id="vegetables">
+        <div class="parallox">
+            <div class="title"> VEGETABLES </div>
+        </div>
+        <br>
+        <div class="items">
+            <div class="images">
+                <img src="okra.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b> Organic okra </b><br/>
+                <div class="item-select">
+                    Price : $5.55/500grams
+                </div>
+                <label> Qty :</label>
+                <select class="item-select">
+                        <option> 250 grams </option>
+                        <option> 550 grams </option>
+                        <option> 750 grams </option>
+                        <option> 1000 grams </option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now </button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="green peepper.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b> Organic GreenPepper </b><br/>
+                <div class="item-select">
+                    Price : $4.55/500grams
+                </div>
+                <label> Qty :</label>
+                <select class="item-select">
+                        <option> 250 grams </option>
+                        <option> 550 grams </option>
+                        <option> 750 grams </option>
+                        <option> 1000 grams </option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now </button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="tomatoes.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b> Organic Tomatoes </b><br/>
+                <div class="item-select">
+                    Price : $3.55/500grams
+                </div>
+                <label> Qty :</label>
+                <select class="item-select">
+                        <option> 250 grams </option>
+                        <option> 550 grams </option>
+                        <option> 750 grams </option>
+                        <option> 1000 grams </option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now </button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="onion.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b> Yellow Onion </b><br/>
+                <div class="item-select">
+                    Price : $2.99/500grams
+                </div>
+                <label> Qty :</label>
+                <select class="item-select">
+                        <option> 250 grams </option>
+                        <option> 550 grams </option>
+                        <option> 750 grams </option>
+                        <option> 1000 grams </option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now </button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="spinach.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b> Organic Spinach</b><br/>
+                <div class="item-select">
+                    Price : $3.99/500grams
+                </div>
+                <label> Qty :</label>
+                <select class="item-select">
+                        <option> 250 grams </option>
+                        <option> 550 grams </option>
+                        <option> 750 grams </option>
+                        <option> 1000 grams </option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now </button>
+            </div>
+        </div>
+        <div class="items">
+            <div class="images">
+                <img src="carrots.jpg" class="item-image-size"/>
+            </div>
+            <div class="description">
+                <b> Organic carrots </b><br/>
+                <div class="item-select">
+                    Price : $4.99/500grams
+                </div>
+                <label> Qty :</label>
+                <select class="item-select">
+                        <option> 250 grams </option>
+                        <option> 550 grams </option>
+                        <option> 750 grams </option>
+                        <option> 1000 grams </option>
+                </select><br/>
+                <button class="buynow-btn">Buy Now </button>
+            </div>
+        </div>
+     </div>
+
+
+<!--veg start here-->
+<div class="deals-container" id="fruits">
+    <div class="parallox">
+        <div class="title"> FRUITS </div>
+    </div>
+    <br>
+    <div class="items">
+        <div class="images">
+            <img src="apples.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+            <b> Organic Apples </b><br/>
+            <div class="item-select">
+                Price : $5.55/500grams
+            </div>
+            <label> Qty :</label>
+            <select class="item-select">
+                    <option> 250 grams </option>
+                    <option> 550 grams </option>
+                    <option> 750 grams </option>
+                    <option> 1000 grams </option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now </button>
+        </div>
+    </div>
+    <div class="items">
+        <div class="images">
+            <img src="kiwi-.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+            <b> Organic Kiwi </b><br/>
+            <div class="item-select">
+                Price : $4.55/500grams
+            </div>
+            <label> Qty :</label>
+            <select class="item-select">
+                    <option> 250 grams </option>
+                    <option> 550 grams </option>
+                    <option> 750 grams </option>
+                    <option> 1000 grams </option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now </button>
+        </div>
+    </div>
+    <div class="items">
+        <div class="images">
+            <img src="dragonfruit.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+            <b> Organic Dragon Fruit </b><br/>
+            <div class="item-select">
+                Price : $3.55/500grams
+            </div>
+            <label> Qty :</label>
+            <select class="item-select">
+                    <option> 250 grams </option>
+                    <option> 550 grams </option>
+                    <option> 750 grams </option>
+                    <option> 1000 grams </option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now </button>
+        </div>
+    </div>
+    <div class="items">
+        <div class="images">
+            <img src="strawberries-.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+            <b> Strawberries </b><br/>
+            <div class="item-select">
+                Price : $2.99/500grams
+            </div>
+            <label> Qty :</label>
+            <select class="item-select">
+                    <option> 250 grams </option>
+                    <option> 550 grams </option>
+                    <option> 750 grams </option>
+                    <option> 1000 grams </option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now </button>
+        </div>
+    </div>
+    <div class="items">
+        <div class="images">
+            <img src="watermelons-.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+            <b> Watermelon </b><br/>
+            <div class="item-select">
+                Price : $3.99/500grams
+            </div>
+            <label> Qty :</label>
+            <select class="item-select">
+                    <option> 250 grams </option>
+                    <option> 550 grams </option>
+                    <option> 750 grams </option>
+                    <option> 1000 grams </option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now </button>
+        </div>
+    </div>
+    <div class="items">
+        <div class="images">
+            <img src="bananas-.jpg" class="item-image-size"/>
+        </div>
+        <div class="description">
+            <b> Organic Bananas </b><br/>
+            <div class="item-select">
+                Price : $4.99/500grams
+            </div>
+            <label> Qty :</label>
+            <select class="item-select">
+                    <option> 250 grams </option>
+                    <option> 550 grams </option>
+                    <option> 750 grams </option>
+                    <option> 1000 grams </option>
+            </select><br/>
+            <button class="buynow-btn">Buy Now </button>
+        </div>
+    </div>
+ </div>
+<!--veg ends here-->
+<!---- footer starts here-->
+<div class="parallaxl">
+    <div class="footer">
+        <div class="quick-links">
+            <div> Locations </div>
+            <ul>
+                <li><a href="" class="a-links"> Address 1</a></li>
+                <li><a href="" class="a-links"> Address 2</a></li>
+                <li><a href="" class="a-links"> Address 3</a></li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <div> Careers </div>
+            <ul>
+                <li><a href="" class="a-links">Packing Staff </a></li>
+                <li><a href="" class="a-links"> Delivery Agents</a></li>
+                <li><a href="" class="a-links"> Shelf Fillers </a></li>
+            </ul>
+        </div>
+        <div class="quick-links">
+            <div> Quick Links </div>
+            <ul>
+                <li><a href="" class="a-links"> Contact Us </a></li>
+                <li><a href="" class="a-links"> FAQ </a></li>
+                <li><a href="" class="a-links"> Help </a></li>
+            </ul>
+        </div>
+    </div>
+</div> 
+<div class="copyrights">
+   <img src="data:image/jpeg;base64,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" height="20px" alt=""> 2023 BY Tanish
+    
+</div>
+<!---- footer starts here-->
+</body>
+</html>
